@@ -62,6 +62,7 @@ class WebServer:
                     if path in pagesDict:
                         page = pagesDict[path]
                     else:
+                        print(f'page not found. redirecting to /')
                         page = "/static/index.html"
                         
                     f = open(page)
